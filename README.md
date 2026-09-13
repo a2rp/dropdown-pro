@@ -1,26 +1,42 @@
-# Dropdown/Menu Pro (React + Vite)
+# Dropdown Pro
 
-**Live:** https://a2rp.github.io/dropdown-pro/  
-**Repo:** https://github.com/a2rp/dropdown-pro
-
-## What is this?
-
-A small, click-only **Dropdown / Menu** for React. It supports a single-level submenu, smart positioning (flip + clamp), closes on outside click, and needs no external UI libs. Styles and theme tokens are scoped inside a single `Styled.Wrapper`.
+A polished React and Vite demo for dropdown menus with smart viewport placement, nested actions, and responsive interaction states.
 
 ## Features
 
--   Click to open/close the menu; submenu opens on hover
--   **Smart placement:** computes `left/top` before paint, flips above/left if needed, clamps to viewport, repositions on scroll/resize
--   **Outside-click** closes everything
--   One portal target inside the wrapper so scoped styles apply
--   No keyboard shortcuts (by design), no routing, front-end only
--   Code isolated in `src/dropdownPro/`
+- Click to open and close menus
+- Smart flip and clamp positioning near viewport edges
+- Nested submenu support for grouped actions
+- Outside-click closing behavior
+- Portal rendering for reliable menu layering
+- Responsive premium dark interface
 
 ## Run locally
 
 ```bash
-git clone https://github.com/a2rp/dropdown-pro
-cd dropdown-pro
-npm i
+npm install
 npm run dev
 ```
+
+## Build and deploy
+
+```bash
+npm run build
+npm run deploy
+```
+
+Live demo: https://a2rp.github.io/dropdown-pro/
+
+## Links
+
+Portfolio: https://www.ashishranjan.net/
+GitHub: https://github.com/a2rp
+CodePen: https://codepen.io/ash1198
+LinkedIn: https://www.linkedin.com/in/aashishranjan
+Facebook: https://www.facebook.com/theash.ashish/
+YouTube: https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1
+Email: mailto:ash.ranjan09@gmail.com
+
+Support: https://a2rp-donation-page.netlify.app/
+Buy Me a Coffee: https://buymeacoffee.com/a2rp
+Patreon: https://www.patreon.com/a2rp
