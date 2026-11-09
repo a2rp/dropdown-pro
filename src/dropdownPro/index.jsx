@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import { Styled } from "./styled.js";
 import Dropdown from "./Dropdown.jsx";
 
@@ -20,6 +20,15 @@ const footerLinks = [
 
 export default function DropdownPro() {
     const [showTopButton, setShowTopButton] = useState(false);
+
+    const scrollToPageTop = () => {
+        const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+
+        window.scrollTo({
+            top: 0,
+            behavior: reduceMotion ? "auto" : "smooth",
+        });
+    };
 
     useEffect(() => {
         const handleScroll = () => setShowTopButton(window.scrollY > 260);
@@ -106,7 +115,7 @@ export default function DropdownPro() {
                 </footer>
             </main>
 
-            <button className={`go-top ${showTopButton ? "show" : ""}`} type="button" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} aria-label="Go to top" title="Go to top">↑</button>
+            <button className={`go-top ${showTopButton ? "show" : ""}`} type="button" onClick={scrollToPageTop} aria-label="Go to top" title="Go to top">↑</button>
             <div id="dropdown-portal-root" />
         </Styled.Wrapper>
     );

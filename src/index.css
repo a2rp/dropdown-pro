@@ -2,3 +2,4 @@
 html, body, #root { min-width: 320px; min-height: 100%; margin: 0; }
 body { margin: 0; }
 button { font-family: inherit; }
+:focus-visible { outline: 2px solid #c9f27a; outline-offset: 3px; }

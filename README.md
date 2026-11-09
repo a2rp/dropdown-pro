@@ -6,10 +6,12 @@ A focused React and Vite demo for reliable dropdown menus with smart viewport pl
 
 ## Features
 
-- Click-first dropdown interaction
+- Keyboard, pointer, and touch dropdown interaction
+- Arrow-key navigation, Home/End, Escape, and focus restoration
 - Smart flip and clamp positioning near viewport edges
-- One-level nested submenu support
-- Outside-click closing behavior
+- Click and keyboard support for one-level nested submenus
+- Scrollable menus for long option lists
+- Outside-click and focus-out closing behavior
 - Portal rendering for reliable menu layering
 - Fixed branded header, icon-only footer links, and go-to-top control
 
